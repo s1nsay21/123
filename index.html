@@ -29,25 +29,30 @@
             font-size: 1.2em;
             margin: 5px;
             border-radius: 25px;
-            background-color: #ff9f09;
             color: white;
             border: none;
             cursor: pointer;
             transition: 0.3s;
         }
+        .buttons button[data-func="cos"] { background-color: #4CAF50; } /* Зеленый */
+        .buttons button[data-func="sin"] { background-color: #2196F3; } /* Синий */
+        .buttons button[data-func="tan"] { background-color: #FF5722; } /* Оранжевый */
+        .buttons button[data-func="ln"] { background-color: #9C27B0; } /* Фиолетовый */
+        .buttons button[data-func="sqrt"] { background-color: #FFEB3B; color: black; } /* Желтый */
+        
         .buttons button:hover {
-            background-color: #ffaf32;
+            opacity: 0.9;
         }
     </style>
 </head>
 <body>
     <div class="calculator">
         <div class="buttons">
-            <button data-func="sqrt">√x</button>
-            <button data-func="ln">ln</button>
-            <button data-func="sin">sin</button>
             <button data-func="cos">cos</button>
+            <button data-func="sin">sin</button>
             <button data-func="tan">tan</button>
+            <button data-func="ln">ln</button>
+            <button data-func="sqrt">√x</button>
         </div>
         <div class="display">
             <input id="inputValue" type="number" placeholder="0">
